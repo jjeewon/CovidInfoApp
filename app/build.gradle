@@ -62,4 +62,11 @@ dependencies {
     //assisted Injection
     compileOnly "com.squareup.inject:assisted-inject-annotations-dagger2:$assisted_injection_version"
     kapt "com.squareup.inject:assisted-inject-processor-dagger2:$assisted_injection_version"
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retrofit2_rxjava2_adapter_version"
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:$rxjava3_retrofit_adapter_version"
+
 }
