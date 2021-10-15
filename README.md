@@ -1,2 +1,18 @@
-# CovidInfoApp 
+# CovidInfoApp - Android App
 Get Information about Covid-19(South Korea)
+## About
+CovidInfoApp has been made for you to comfortably get Covid-19 information of South Korea . 
+....
+## Features
+The android app lets you:
+* ...
+* ...
+* ...
+## ScreenShots
+작성중..
+## Permissions
+On Android versions prior to Android 6.0, CovidInfoApp requires the following permissions:
+* Full Network Access.
+* ...
+* ...
+
