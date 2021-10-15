@@ -4,11 +4,12 @@ import android.app.Application
 import android.content.Context
 import com.gomdolstudio.covidinfoapp.App
 import com.gomdolstudio.covidinfoapp.ApplicationContext
+import com.gomdolstudio.covidinfoapp.di.ViewModelModule
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
-@Module
+@Module(includes = [(ViewModelModule::class)])
 class AppModule {
     @Provides
     @Singleton
