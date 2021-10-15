@@ -11,7 +11,7 @@ The android app lets you:
 ## ScreenShots
 작성중..
 ## Permissions
-On Android versions prior to Android 6.0, wallabag requires the following permissions:
+On Android versions prior to Android 6.0, CovidInfoApp requires the following permissions:
 * Full Network Access.
 * ...
 * ...
