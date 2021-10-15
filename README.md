@@ -1,10 +1,18 @@
 # CovidInfoApp - Android App
 Get Information about Covid-19(South Korea)
 ## About
-작성중..
+CovidInfoApp has been made for you to comfortably get Covid-19 information of South Korea . 
+....
 ## Features
-작성중..
+The android app lets you:
+* ...
+* ...
+* ...
 ## ScreenShots
 작성중..
 ## Permissions
-작성중..
+On Android versions prior to Android 6.0, wallabag requires the following permissions:
+* Full Network Access.
+* ...
+* ...
+
