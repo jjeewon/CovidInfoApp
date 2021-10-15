@@ -58,7 +58,7 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$arch_lifecycle_version"
     implementation "android.arch.lifecycle:reactivestreams:$arch_lifecycle_version"
     kapt "android.arch.lifecycle:compiler:$arch_lifecycle_version"
-    
+
     //assisted Injection
     compileOnly "com.squareup.inject:assisted-inject-annotations-dagger2:$assisted_injection_version"
     kapt "com.squareup.inject:assisted-inject-processor-dagger2:$assisted_injection_version"
