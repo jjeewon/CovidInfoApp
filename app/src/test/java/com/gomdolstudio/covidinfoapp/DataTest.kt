@@ -34,7 +34,7 @@ class DataTest {
 
     @Test
     fun 백신현황데이터테스트(){
-        vaccinationLocationService.getVaccinationLocation("1","10","qMYuD3Bao+aVVtqIcLH1sqz80i+otqoifcU1C7frDT+SVjQD9FXw8uT1CqYcME+q+A8YKoiZns1FXGGgJVwVzg==")
+        vaccinationLocationService.getVaccinationLocation("1","10","qMYuD3Bao+aVVtqIcLH1sqz80i+otqoifcU1C7frDT+SVjQD9FXw8uT1CqYcME+q+A8YKoiZns1FXGGgJVwVzg==","2021-10-11 00:00:00")
             .subscribe(System.out::println)
     }
 }

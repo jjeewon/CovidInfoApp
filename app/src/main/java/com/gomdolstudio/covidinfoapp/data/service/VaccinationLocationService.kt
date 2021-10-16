@@ -10,7 +10,8 @@ interface VaccinationLocationService {
     fun getVaccinationLocation(
         @Query("page")page: String,
         @Query("perPage")perPage: String,
-        @Query("serviceKey")serviceKey: String
+        @Query("serviceKey")serviceKey: String,
+        @Query("cond[baseDate::EQ]")baseDate: String
     ): Single<VaccinationLocation>
 
 }
