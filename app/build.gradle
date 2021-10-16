@@ -69,4 +69,8 @@ dependencies {
     implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retrofit2_rxjava2_adapter_version"
     implementation "com.github.akarnokd:rxjava3-retrofit-adapter:$rxjava3_retrofit_adapter_version"
 
+    //reactive
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxjava2_android_version"
+
 }
