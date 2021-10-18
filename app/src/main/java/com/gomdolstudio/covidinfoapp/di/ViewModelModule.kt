@@ -2,9 +2,12 @@ package com.gomdolstudio.covidinfoapp.di
 
 import androidx.lifecycle.ViewModel
 import com.gomdolstudio.covidinfoapp.di.factory.AssistedSavedStateViewModelFactory
+import com.gomdolstudio.covidinfoapp.ui.CasesViewModel
 import com.squareup.inject.assisted.AssistedInject
 import com.squareup.inject.assisted.dagger2.AssistedModule
+import dagger.Binds
 import dagger.Module
+import dagger.multibindings.IntoMap
 import dagger.multibindings.Multibinds
 
 @AssistedModule
@@ -18,4 +21,10 @@ abstract class ViewModelModule {
     // AssistedInject로 관리하는 ViewModel Factory 멀티 바인딩
     @Multibinds
     abstract fun bindAssistedViewModels(): Map<Class<out ViewModel>, @JvmSuppressWildcards AssistedSavedStateViewModelFactory<out ViewModel>>
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(CasesViewModel::class)
+    abstract fun bindsCasesViewModel(factory: CasesViewModel.Factory): AssistedSavedStateViewModelFactory<out ViewModel>
+
 }
