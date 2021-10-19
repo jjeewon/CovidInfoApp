@@ -11,6 +11,7 @@ import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Named
 import javax.inject.Singleton
 
 @Module(includes = [(ViewModelModule::class),(RetrofitModule::class)])
@@ -18,6 +19,7 @@ class AppModule {
 
     @Singleton
     @Provides
+    @Named("vaccine")
     internal fun provideVaccinationRetrofitService(): Retrofit {
         return Retrofit.Builder()
             .baseUrl("https://api.odcloud.kr/api/")
@@ -25,6 +27,18 @@ class AppModule {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
     }
+
+    @Singleton
+    @Provides
+    @Named("news")
+    internal fun provideNewsRetrofitService(): Retrofit {
+        return Retrofit.Builder()
+                .baseUrl("https://openapi.naver.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .build()
+    }
+
 
     @Provides
     @Singleton
