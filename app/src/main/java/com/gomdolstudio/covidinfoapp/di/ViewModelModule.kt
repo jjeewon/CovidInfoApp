@@ -3,6 +3,7 @@ package com.gomdolstudio.covidinfoapp.di
 import androidx.lifecycle.ViewModel
 import com.gomdolstudio.covidinfoapp.di.factory.AssistedSavedStateViewModelFactory
 import com.gomdolstudio.covidinfoapp.ui.CasesViewModel
+import com.gomdolstudio.covidinfoapp.ui.NewsViewModel
 import com.squareup.inject.assisted.AssistedInject
 import com.squareup.inject.assisted.dagger2.AssistedModule
 import dagger.Binds
@@ -26,5 +27,10 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(CasesViewModel::class)
     abstract fun bindsCasesViewModel(factory: CasesViewModel.Factory): AssistedSavedStateViewModelFactory<out ViewModel>
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(NewsViewModel::class)
+    abstract fun bindsNewsViewModel(factory: NewsViewModel.Factory): AssistedSavedStateViewModelFactory<out ViewModel>
 
 }
