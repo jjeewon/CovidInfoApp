@@ -1,6 +1,6 @@
 # CovidInfoApp - Android App
 Get Information about Covid-19 vaccination(South Korea)  
-<img width="369" alt="스샷1" src="https://user-images.githubusercontent.com/18653295/137859613-892430ab-7d64-4b2e-9636-b9b3439f37f1.png">   
+  <img width="365" alt="스샷2" src="https://user-images.githubusercontent.com/18653295/137865217-63e156d6-5571-4030-825b-66b66247eae7.png">  
 ## About
 CovidInfoApp has been made for you to comfortably get Covid-19 vaccination information of South Korea . 
 ....
