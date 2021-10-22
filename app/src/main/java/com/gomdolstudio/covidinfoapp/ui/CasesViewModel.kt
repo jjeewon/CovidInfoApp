@@ -1,6 +1,7 @@
 package com.gomdolstudio.covidinfoapp.ui
 
 import androidx.lifecycle.*
+import com.gomdolstudio.covidinfoapp.Tokens
 import com.gomdolstudio.covidinfoapp.data.CasesLocation
 import com.gomdolstudio.covidinfoapp.data.service.CasesLocationService
 import com.gomdolstudio.covidinfoapp.di.factory.AssistedSavedStateViewModelFactory
@@ -39,7 +40,7 @@ class CasesViewModel @AssistedInject constructor(@Assisted private val savedStat
     interface Factory : AssistedSavedStateViewModelFactory<CasesViewModel>
 
     fun loadCases(){
-        compositeDisposable.add(casesLocationService.getCasesLocation("1","20","qMYuD3Bao+aVVtqIcLH1sqz80i+otqoifcU1C7frDT+SVjQD9FXw8uT1CqYcME+q+A8YKoiZns1FXGGgJVwVzg==",LocalDate.now().toString()+" 00:00:00")
+        compositeDisposable.add(casesLocationService.getCasesLocation("1","20",Tokens.VACCINE_SERVICE_KEY,LocalDate.now().toString()+" 00:00:00")
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(liveCases::setValue))

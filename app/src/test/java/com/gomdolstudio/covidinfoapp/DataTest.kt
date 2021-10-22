@@ -35,14 +35,14 @@ class DataTest {
     }
     @Test
     fun 백신센터데이터테스트(){
-        vaccinationCenterService.getVaccinationCenter("1","10","qMYuD3Bao+aVVtqIcLH1sqz80i+otqoifcU1C7frDT+SVjQD9FXw8uT1CqYcME+q+A8YKoiZns1FXGGgJVwVzg==")
+        vaccinationCenterService.getVaccinationCenter("1","10",Tokens.VACCINE_SERVICE_KEY)
             .subscribe(System.out::println)
     }
 
 
     @Test
     fun 백신현황데이터테스트(){
-        casesLocationService.getCasesLocation("1","10","qMYuD3Bao+aVVtqIcLH1sqz80i+otqoifcU1C7frDT+SVjQD9FXw8uT1CqYcME+q+A8YKoiZns1FXGGgJVwVzg==","2021-10-11 00:00:00")
+        casesLocationService.getCasesLocation("1","10",Tokens.VACCINE_SERVICE_KEY,"2021-10-11 00:00:00")
             .subscribe(System.out::println)
     }
 
