@@ -21,7 +21,7 @@ On Android versions prior to Android 6.0, CovidInfoApp requires the following pe
 * ...
 * ...
 ## Authorization
-<h4> COVID-19 Vaccination Status API </h4> 
+<h4> COVID-19 Vaccination Status API(코로나 백신 예방 접종 통계) </h4> 
 
 ```html
 GET /api/15077756/v1/vaccine-stat?page=1&perPage=10&serviceKey=[YOUR_SERVICE_KEY]&cond[baseDate::EQ]=[YOUR_BASE_DATE]
@@ -30,14 +30,32 @@ GET /api/15077756/v1/vaccine-stat?page=1&perPage=10&serviceKey=[YOUR_SERVICE_KEY
 <!-- Table -->
 |Parameter|Type|Description|
 |--|--|--|
-|page|integer||
-|perPage|integer||
-|<b>serviceKey</b>|string|Your service key|
-|cond[baseDate::EQ]|string|Statistics base date. cf. "21:10:22 00:00:00"|
+|`page`|integer||
+|`perPage`|integer||
+|`serviceKey`|string|Your service key|
+|`cond[baseDate::EQ]`|string|Statistics base date. cf. "21:10:22 00:00:00"|
 
 Reference = https://www.data.go.kr/data/15077756/openapi.do
+
+<h4> Naver News API(네이버 뉴스 검색 API) </h4> 
+
+```html
+GET /v1/search/news.json
+```    
+
+<!-- Table -->
+|Parameter|Type|Description|
+|--|--|--|
+|`query`|string|<b>Required</b>|
+|`display`|integer|10(default), 100(max value)|
+|`start`|integer|1(default), 1000(max value)|
+|`sort`|string|sim, date(default)|
+
+Reference = https://developers.naver.com/docs/serviceapi/search/news/news.md#%EB%89%B4%EC%8A%A4
+
+
 
 ## CopyRights
 <div>아이콘 제작자 <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
 
-https://www.data.go.kr/data/15077756/openapi.do
+
