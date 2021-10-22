@@ -42,7 +42,7 @@ GET /api/15077756/v1/vaccine-stat?page=1&perPage=10&serviceKey=[YOUR_SERVICE_KEY
 [NAVER API REFERENCE](https://developers.naver.com/docs/serviceapi/search/news/news.md#%EB%89%B4%EC%8A%A4)
 
 ```html
-GET /v1/search/news.json
+GET /v1/search/news.json?query=%EC%A3%BC%EC%8B%9D&display=10&start=1&sort=sim
 ```    
 
 <!-- Table -->
