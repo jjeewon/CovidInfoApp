@@ -251,3 +251,4 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/kotlin,androidstudio,android
+app/src/main/java/com/gomdolstudio/covidinfoapp/Tokens.kt
