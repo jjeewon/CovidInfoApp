@@ -20,6 +20,24 @@ On Android versions prior to Android 6.0, CovidInfoApp requires the following pe
 * Full Network Access.
 * ...
 * ...
-## 이미지 저작권
+## Authorization
+<h4> COVID-19 Vaccination Status API </h4> 
+
+```html
+GET /api/15077756/v1/vaccine-stat?page=1&perPage=10&serviceKey=[YOUR_SERVICE_KEY]&cond[baseDate::EQ]=[YOUR_BASE_DATE]
+```    
+
+<!-- Table -->
+|Parameter|Type|Description|
+|--|--|--|
+|page|integer||
+|perPage|integer||
+|<b>serviceKey</b>|string|Your service key|
+|cond[baseDate::EQ]|string|Statistics base date. cf. "21:10:22 00:00:00"|
+
+Reference = https://www.data.go.kr/data/15077756/openapi.do
+
+## CopyRights
 <div>아이콘 제작자 <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div>
 
+https://www.data.go.kr/data/15077756/openapi.do
