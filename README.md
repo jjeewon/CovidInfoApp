@@ -9,9 +9,10 @@ CovidInfoApp has been made for you to comfortably get Covid-19 vaccination infor
 ....
 ## Features
 The android app lets you:
-* ...
-* ...
-* ...
+* Get coronavirus (COVID-19) vaccination status
+* Get articles read about Covid-19 vaccination in South Korea
+* Get Vaccination Center Information
+* Completely ad-free
 ## ScreenShots
 작성중..
 ## Permissions
