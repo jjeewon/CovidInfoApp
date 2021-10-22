@@ -18,8 +18,7 @@ The android app lets you:
 ## Permissions
 On Android versions prior to Android 6.0, CovidInfoApp requires the following permissions:
 * Full Network Access.
-* ...
-* ...
+
 ## Authorization
 <h4> COVID-19 Vaccination Status API(코로나 백신 예방 접종 통계) </h4> 
 
