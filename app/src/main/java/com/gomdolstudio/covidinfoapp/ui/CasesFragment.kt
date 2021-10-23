@@ -77,8 +77,7 @@ class CasesFragment: DaggerFragment() {
     fun getLocation(casesLocation: CasesLocation){
         val a = 3
         val b = 4
-        var bgShape : GradientDrawable = binding.chungbuk.background as GradientDrawable
-        bgShape.setColor(Colors.colors[5])
+        Log.d("kiti",casesLocation.data.get(12).firstCnt.toString())
     }
 
     fun getNews(newsItems: NewsItems){
